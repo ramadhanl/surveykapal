@@ -11,7 +11,7 @@
   <link href="<?php echo base_url(); ?>assets/css/materialize/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
-
+<h1>Home</h1>
 <!-- Semangat!  -->
 
 
