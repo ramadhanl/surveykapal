@@ -25,43 +25,76 @@
 			<div class="judul-konten">
 				<p>Halaman keterangan Kapal </p>
 			</div>
-			  <table class="display">
-	          <thead>
-	              
-	              <th>Length Over All</th>
-	              <th>Length Between Perpendicular</th>
-	              <th>Draught Design</th>
-	              <th>Depth Moulded</th>
-	              <th>Breadth Moulded</th>
-	              <th>Service Speed 85% MCR</th>
-	              <th>Complement</th>
-	              <th>Engine Output</th>
-	              <th>Bollard Pull</th>
-	              <th>Harga Pembangunan</th>
-	            </tr>
-	          </thead>
+			  <table class="display" style="background-color:white; border-right-width:'0px';border-right-style:solid;">
+	          
+
 	          <tbody>
+	          
 	          <?php
-				$query = $this->db->get('keterangan_kapal');
-				foreach ($query->result() as $row)
-				{
+				$row = $this->db->get_where('keterangan_kapal', array('ID_Ket' => 1))->row();
 				    echo "<tr>";
+				    echo "<td>Length Over All</td>";
+				    echo "<td> : </td>";
       				echo "<td>".$row->Loa."</td>";
+      				echo "</tr>";
+      				echo "<tr>";
+      				echo "<td>Length Between Perpendicular</td>";
+      				echo "<td> : </td>";
       				echo "<td>".$row->Lpp."</td>";
+      				echo "</tr>";
+      				echo "<tr>";
+      				echo "<td>Draught Design</td>";
+				    echo "<td> : </td>";
       				echo "<td>".$row->D_Design."</td>";
+      				echo "</tr>";
+      				echo "<tr>";
+      				echo "<td>Depth Moulded</td>";
+				    echo "<td> : </td>";
       				echo "<td>".$row->H_Mld."</td>";
+      				echo "</tr>";
+      				echo "<tr>";
+      				echo "<td>Breadth Moulded</td>";
+				    echo "<td> : </td>";
 	 				echo "<td>".$row->B_Mld."</td>";
-	 				echo "<td>".$row->Vs."</td>";
-	 				echo "<td>".$row->Complement."</td>";
-	 				echo "<td>".$row->Engine_Output."</td>";
-	 				echo "<td>".$row->Bollard_Pull."</td>";
-	 				echo "<td>".$row->Harga."</td>";
 	 				echo "</tr>";
-				}
+	 				echo "<tr>";
+	 				echo "<td>Service Speed 85% MCR</td>";
+				    echo "<td> : </td>";
+	 				echo "<td>".$row->Vs."</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td>Complement</td>";
+				    echo "<td> : </td>";
+	 				echo "<td>".$row->Complement."</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td>Engine Output</td>";
+				    echo "<td> : </td>";
+	 				echo "<td>".$row->Engine_Output."</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td>Bollard Pull</td>";
+				    echo "<td> : </td>";
+	 				echo "<td>".$row->Bollard_Pull."</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td>Harga Pembangunan</td>";
+				    echo "<td> : </td>";
+	 				echo "<td>".$row->Harga."</td>";
+	 				echo "</tr>"
+	 				
 				?>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
+			 <div class="col-md-6">
+				<div class="brand">
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_kapal_home">Lanjut</a></h1>
+								<div class="line-spacer"></div>
+								
+				</div>
+			 </div>
+			 
 </body>
 
 

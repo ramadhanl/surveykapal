@@ -42,4 +42,16 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('surveykapal/survey_kondisi_kapal');
 	}
+	public function survey_lambung_kapal()
+	{
+		$this->load->view('surveykapal/survey_lambung_kapal');
+	}
+	public function survey_permesinan_kapal()
+	{
+		$this->load->view('surveykapal/survey_permesinan_kapal');
+	}
+	public function survey_outfitting_kapal()
+	{
+		$this->load->view('surveykapal/survey_outfitting_kapal');
+	}
 }

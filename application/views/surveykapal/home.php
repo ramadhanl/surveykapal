@@ -14,6 +14,9 @@
 	<link href="<?php echo base_url(); ?>assets/mamba/color/default.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/css/hover/hover.css" rel="stylesheet" media="screen">
 	<script src="<?php echo base_url(); ?>assets/mamba/js/modernizr.custom.js"></script>
+
+
+	<h3 class="navbar">A</h3>
 </head>
 
 <!-- Semangat!  -->
