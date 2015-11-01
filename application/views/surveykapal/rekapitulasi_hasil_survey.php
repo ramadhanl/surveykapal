@@ -27,64 +27,104 @@
 			  <table class="display">
 	          <thead>
 	            <tr>
-	              <th>Band or Group</th>
-	              <th>Name</th>
-	              <th>Instrument</th>
-	              <th>Influence</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
+	              <th>No</th>
+	              <th>Nama</th>
+	              <th>Keterangan</th>
+	              <th>Bobot</th>
+	              <th>Kondisi</th>
+	              <th>Total</th>
 	            </tr>
 	          </thead>
 	          <tbody>
 	            <tr class="odd">
-	              <td>Queen</td>
-	              <td>Brian May</td>
-	              <td>Guitar</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="8">1</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="8">Kondisi lambung</td>
+	              <td>tidak ada kerusakan</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="8">40%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="8">80%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="8">32%</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Queen</td>
-	              <td>Roger Taylor</td>
-	              <td>Drums</td>
-	              <td class="center">5</td>
-	              <td class="center">7</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>tidak ada kerusakan</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Beatles</td>
-	              <td>Paul McCartney</td>
-	              <td>Guitar &amp; Piano</td>
-	              <td class="center">8</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>tidak ada kerusakan</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Adele</td>
-	              <td>Adele</td>
-	              <td>None</td>
-	              <td class="center">8</td>
-	              <td class="center">8</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>tidak ada kerusakan</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Britney Spears</td>
-	              <td>Britney Spears</td>
-	              <td>None</td>
-	              <td class="center">7</td>
-	              <td class="center">-5</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="even">
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="even">
+	              <td style="border-bottom: 1px solid #E6E6E6;">tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">2</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">Kondisi permesinan</td>
+	              <td>tidak ada kerusakan</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">40%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">80%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">32%</td>
+	            </tr>
+	            <tr class="even">
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="even">
+	              <td style="border-bottom: 1px solid #E6E6E6;">tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="3">3</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="3">Kondisi outfitting</td>
+	              <td>tidak ada kerusakan</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="3">20%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="3">95%</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="3">19%</td>
+	            </tr>
+	            <tr class="even">
+	              <td>tidak ada kerusakan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>tidak ada kerusakan</td>
 	            </tr>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
+			 <div style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:20px;">
+			 <div class="col-sm-12" >
+			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;">Kesimpulan </h4>
+				<div class="col-sm-12">
+					 <p>Kapal mengalami penyusutan harga sekitar</p>
+					 <p>Rp 50.000.000.000,00</p><br>
+					 <p>Jadi perkiraan harga kapal bekas adalah</p>
+					 <p>Rp 280.000.000.000,00</p><br>
+					 <p>Dengan kerusakan pada </p>
+					 <p>Lambung    : </p>
+					 <p>1. Sebelah kanan</p>
+					 <p>2. Sebelah kiri</p>
+					 <p>3. Sebelah atas</p><br>
+					 <p>Outfitting :</p>
+					 <p>1. Sebelah kanan</p>
+					 <p>2. Sebelah kiri</p>
+					 <p>3. Sebelah atas</p><br>
+					 <p>Permesinan : </p>
+					 <p>1. Sebelah kanan</p>
+					 <p>2. Sebelah kiri</p>
+					 <p>3. Sebelah atas</p><br>
+				</div>
+			</div>
+			</div>
+			<a href="<?php echo base_url(); ?>home/survey_kapal_home" class="btn btn-primary col-sm-12" style="margin-bottom:20px;" href="index.html">Lanjut</a>
+
 </body>
 
 

@@ -29,6 +29,35 @@
 
 /* GENERAL */
 
+.rekap {
+	text-align:center;
+	display:block;
+	width:150px;
+	font-size: 15px;
+	text-decoration:none;
+	color:#2879A4;
+	padding:5px;
+	background-color:white;
+	border-radius:3px;
+	margin-bottom:17px;
+	border-color: black;
+	border:3px;
+	border-style: solid;
+	font-style: bold;
+}
+.rekap:hover {
+	text-align:center;
+	display:block;
+	width:150px;
+	font-size: 15px;
+	text-decoration:none;
+	color:white;
+	padding:5px;
+	background-color:#2879A4;
+	border-radius:3px;
+	margin-bottom:17px;
+	font-style: bold;
+}
 body {
 	background-color:white;
 }
@@ -37,6 +66,16 @@ table{
 	border-style: solid;
 	border-color: #E6E6E6;
 	border-radius: 40px;
+}
+table tr th a{
+	color: white;
+	height: 100%;
+	width: 100%;
+}
+table tr th a:hover{
+	color: white;
+	height: 100%;
+	width: 100%;
 }
 
 table thead tr {

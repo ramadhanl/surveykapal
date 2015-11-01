@@ -38,7 +38,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_kondisi_kapal">Survey <br>Kondisi Kapal</a></h1>
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_lambung_kapal">Survey <br>Kondisi Kapal</a></h1>
 								<div class="line-spacer"></div>
 								
 							</div>

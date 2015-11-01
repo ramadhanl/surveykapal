@@ -29,15 +29,15 @@
 	          	<thead>
 	            <tr>
 	              <th><a href="<?php echo base_url(); ?>home/survey_lambung_kapal">Lambung</a></th>
-	              <th style="background-color: #2F8ABB;"><a href="<?php echo base_url(); ?>home/survey_permesinan_kapal">Permesinan</a></th>
-	              <th><a href="<?php echo base_url(); ?>home/survey_outfitting_kapal">Outfitting</a></th>
+	              <th><a href="<?php echo base_url(); ?>home/survey_permesinan_kapal">Permesinan</a></th>
+	              <th style="background-color: #2F8ABB;"><a href="<?php echo base_url(); ?>home/survey_outfitting_kapal">Outfitting</a></th>
 	            </tr>
 	        	</thead>
 	        </table>
-			<table class="display" style="margin-bottom:0px;">
+	        <table class="display" style="margin-bottom:0px;">
 	          <thead>
 	            <tr>
-	              <th style="background-color:white;color:black;">Survey Permesinan Kapal</th>
+	              <th style="background-color:white;color:black;">Survey Outfitting Kapal</th>
 	            </tr>
 	          </thead>
 	        </table>
