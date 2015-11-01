@@ -30,17 +30,23 @@
 /* GENERAL */
 
 body {
-	background-color:#dddfd4;
+	background-color:white;
+}
+table{
+	border: 3px;
+	border-style: solid;
+	border-color: #E6E6E6;
+	border-radius: 40px;
 }
 
 table thead tr {
-	background:#3fb0ac;
+	background:#3398CE;
 	height: 30px; 
 }
 table thead th {
 	border-right: 1px solid #ccc;
-	color: #173e43;
-	font-size: 18px; 
+	color: white;
+	font-size: 15px; 
 	text-align: center;
 }
 table thead th:last-of-type { border-right: none; }
@@ -52,7 +58,7 @@ table tr.odd { background-color: #fff; }
 table tr.even { background-color: #f6f6f6; }
 table td { padding: 8px 10px; border-right: 1px solid #ccc; }
 table tbody tr:hover { background-color: #ddd; }
-table thead th:hover { background-color: #65CBC7; }
+table thead th:hover { background-color: #2F8ABB; }
 
 
 .display { width: 100%; }

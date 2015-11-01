@@ -34,54 +34,79 @@
 	            </tr>
 	          </thead>
 	          <tbody>
-	            <tr class="odd">
-	              <td>Queen</td>
-	              <td>Brian May</td>
-	              <td>Guitar</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	           <tr class="odd">
+	              <td>Gross Akte</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Queen</td>
-	              <td>Roger Taylor</td>
-	              <td>Drums</td>
-	              <td class="center">5</td>
-	              <td class="center">7</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>Sertifikat kelayakan kapal</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Beatles</td>
-	              <td>Paul McCartney</td>
-	              <td>Guitar &amp; Piano</td>
-	              <td class="center">8</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>Sertfikat lambung</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Adele</td>
-	              <td>Adele</td>
-	              <td>None</td>
-	              <td class="center">8</td>
-	              <td class="center">8</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>Sertifikat mesin</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Britney Spears</td>
-	              <td>Britney Spears</td>
-	              <td>None</td>
-	              <td class="center">7</td>
-	              <td class="center">-5</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
+	              <td>Surat ukur internasional</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
+	            </tr>
+	            <tr class="even">
+	              <td>Sertifikat keselamatan kapal barang</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>Sertifikat radio komunikasi</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
+	            </tr>
+	            <tr class="even">
+	              <td>Sertifikat bebas polusi</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>Sertifikat bebas tikus</td>
+	              <td>Ada dan masih berlaku</td>
+	              <td>tidak</td>
 	            </tr>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
+			 <div id="kesimpulan" style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:30px;">
+			 <div class="col-sm-12" >
+			 <h4>Kesimpulan sementara :</h4>
+				<div class="col-sm-6">
+					 <p>Dari hasil pengecekan dokumen, dapat diketahui bahwa kapal ini dilengkapi dengan dokumen :</p>
+					 <p>1. Sertifikat kelayakan kapal </p>
+					 <p>2. Sertifikat lambung </p>
+					 <p>3. Sertifikat mesin </p>
+				</div>
+				<div class="col-sm-6">
+					<p>Dokumen yang tidak lengkap adalah :</p>
+				 	<p>1. Surat ukur internasional</p>
+				 	<p>2. Sertifikat keselamatan kapal barang</p>
+				 	<p>3. Sertifikat radio komunikasi</p>
+				 	<p>4. Sertifikat bebas polusi</p>
+				 	<p>5. Sertifikat bebas tikus</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+					 <p>Kesimpulan sementara :</p>
+					 <p>Akan ada penyusutan biaya dari dokumen kapal</p>
+			</div>
+			</div>
+			 
+			 <a href="<?php echo base_url(); ?>home/survey_kapal_home" class="btn btn-primary col-sm-12" style="margin-bottom:20px;" href="index.html">Lanjut</a>
 </body>
 
 

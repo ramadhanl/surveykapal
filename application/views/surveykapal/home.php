@@ -12,6 +12,7 @@
     <link href="<?php echo base_url(); ?>assets/mamba/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/style.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/mamba/color/default.css" rel="stylesheet" media="screen">
+	<link href="<?php echo base_url(); ?>assets/css/hover/hover.css" rel="stylesheet" media="screen">
 	<script src="<?php echo base_url(); ?>assets/mamba/js/modernizr.custom.js"></script>
 </head>
 
@@ -31,14 +32,14 @@
 					<div class="col-md-12">
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a href="index.html">Manual</a></h1>
+								<h1><a class="hvr-float-shadow" href="#">Manual</a></h1>
 								<div class="line-spacer"></div>
 								<p><span>Deskripsi menu</span></p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a href="<?php echo base_url(); ?>home/keterangan_kapal">Survey</a></h1>
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/keterangan_kapal">Survey</a></h1>
 								<div class="line-spacer"></div>
 								<p><span>Deskripsi menu</span></p>
 							</div>

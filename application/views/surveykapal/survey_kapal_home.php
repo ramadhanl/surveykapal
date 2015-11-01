@@ -12,6 +12,7 @@
     <link href="<?php echo base_url(); ?>assets/mamba/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/style.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/mamba/color/default.css" rel="stylesheet" media="screen">
+	<link href="<?php echo base_url(); ?>assets/css/hover/hover.css" rel="stylesheet" media="screen">
 	<script src="<?php echo base_url(); ?>assets/mamba/js/modernizr.custom.js"></script>
 </head>
 
@@ -25,24 +26,19 @@
 			</div>
 				<div class="container">
 					<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12" style="margin-top:30px;">
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a href="index.html">Survey Dokumen</a></h1>
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_dokumen_kapal">Survey <br>Dokumen</a></h1>
 								<div class="line-spacer"></div>
-								<p><span>Lanjut di sini</span></p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a href="<?php echo base_url(); ?>home/keterangan_kapal">Survey Kondisi Kapal</a></h1>
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_kondisi_kapal">Survey <br>Kondisi Kapal</a></h1>
 								<div class="line-spacer"></div>
 								
 							</div>
-						</div>
-						<div class="bottom-intro">
-							<p>Ket : Untuk melakukan penilaian diperlukan survey yang terdiri dari 2 bagian, yaitu dokumen dan kondisi kapal, urutannya adalah dokumen terlebih dahulu</p>
-
 						</div>
 					</div>
 					</div>

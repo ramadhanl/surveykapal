@@ -34,7 +34,7 @@
 	color: black;
 }
 body {
-	background:#529abb;
+	background:white;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -765,12 +765,12 @@ ul#jstwitter li a{
 
 /**********Link Styling**********/   
 a {
-  color: #b2c831;
+	color: #3398CE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #dff948;
+  color: #2F8ABB;
   text-decoration: none;
 }
 
