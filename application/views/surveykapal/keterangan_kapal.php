@@ -19,6 +19,7 @@
   	<div class="container">
 
       <!-- CONTENT -->
+  
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
@@ -26,62 +27,38 @@
 			</div>
 			  <table class="display">
 	          <thead>
-	            <tr>
-	              <th>Band or Group</th>
-	              <th>Name</th>
-	              <th>Instrument</th>
-	              <th>Influence</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
+	              
+	              <th>Length Over All</th>
+	              <th>Length Between Perpendicular</th>
+	              <th>Draught Design</th>
+	              <th>Depth Moulded</th>
+	              <th>Breadth Moulded</th>
+	              <th>Service Speed 85% MCR</th>
+	              <th>Complement</th>
+	              <th>Engine Output</th>
+	              <th>Bollard Pull</th>
+	              <th>Harga Pembangunan</th>
 	            </tr>
 	          </thead>
 	          <tbody>
-	            <tr class="odd">
-	              <td>Queen</td>
-	              <td>Brian May</td>
-	              <td>Guitar</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Queen</td>
-	              <td>Roger Taylor</td>
-	              <td>Drums</td>
-	              <td class="center">5</td>
-	              <td class="center">7</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Beatles</td>
-	              <td>Paul McCartney</td>
-	              <td>Guitar &amp; Piano</td>
-	              <td class="center">8</td>
-	              <td class="center">9</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Adele</td>
-	              <td>Adele</td>
-	              <td>None</td>
-	              <td class="center">8</td>
-	              <td class="center">8</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Britney Spears</td>
-	              <td>Britney Spears</td>
-	              <td>None</td>
-	              <td class="center">7</td>
-	              <td class="center">-5</td>
-	              <td class="center"> 7</td>
-	              <td class="center">9</td>
-	            </tr>
+	          <?php
+				$query = $this->db->get('keterangan_kapal');
+				foreach ($query->result() as $row)
+				{
+				    echo "<tr>";
+      				echo "<td>".$row->Loa."</td>";
+      				echo "<td>".$row->Lpp."</td>";
+      				echo "<td>".$row->D_Design."</td>";
+      				echo "<td>".$row->H_Mld."</td>";
+	 				echo "<td>".$row->B_Mld."</td>";
+	 				echo "<td>".$row->Vs."</td>";
+	 				echo "<td>".$row->Complement."</td>";
+	 				echo "<td>".$row->Engine_Output."</td>";
+	 				echo "<td>".$row->Bollard_Pull."</td>";
+	 				echo "<td>".$row->Harga."</td>";
+	 				echo "</tr>";
+				}
+				?>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>

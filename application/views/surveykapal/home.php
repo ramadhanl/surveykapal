@@ -21,9 +21,10 @@
   	<div id="intro">
 			<div class="intro-text">
 			<div class="upper-intro">
-				<p>Tugas Akhir Hakara Warid</p>
-				<p>Deskripsi 1</p>
-				<p>Deskripsi 2</p>
+				<h5>Tugas Akhir (MN141581)</h5>
+				<p>PERANCANGAN APLIKASI BERBASIS KOMPUTER UNTUK MENINGKATKAN INTUISI</p>
+				<p>DALAM MELAKUKAN PENILAIAN HARGA KAPAL BEKAS</p>
+				<h5>Hakara Warid (4111100103)</h5>
 			</div>
 				<div class="container">
 					<div class="row">
@@ -43,7 +44,9 @@
 							</div>
 						</div>
 						<div class="bottom-intro">
-							<p>Kata-kata dibawahnya apa ini</p>
+							<p>Jurusan Teknik Perkapalan</p>
+							<p>Fakultas Teknologi Kelautan</p>
+							<p>Institut Teknologi Sepuluh Nopember Surabaya</p>
 						</div>
 					</div>
 					</div>

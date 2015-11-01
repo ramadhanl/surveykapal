@@ -22,18 +22,15 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Survey dokumen kapal </p>
+				<p>Survey Dokumen Kapal</p>
 			</div>
 			  <table class="display">
 	          <thead>
 	            <tr>
-	              <th>Band or Group</th>
-	              <th>Name</th>
-	              <th>Instrument</th>
-	              <th>Influence</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
-	              <th>Awesome</th>
+	              <th>Nama Dokumen</th>
+	              <th>Kondisi</th>
+	              <th>Depresiasi</th>
+	              
 	            </tr>
 	          </thead>
 	          <tbody>
