@@ -82,16 +82,16 @@
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
-			 <div id="kesimpulan" style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:30px;">
+			 <div style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:20px;">
 			 <div class="col-sm-12" >
-			 <h4>Kesimpulan sementara :</h4>
-				<div class="col-sm-6">
+			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;">Kesimpulan sementara </h4>
+				<div class="col-sm-4" style="float:left;">
 					 <p>Dari hasil pengecekan dokumen, dapat diketahui bahwa kapal ini dilengkapi dengan dokumen :</p>
 					 <p>1. Sertifikat kelayakan kapal </p>
 					 <p>2. Sertifikat lambung </p>
 					 <p>3. Sertifikat mesin </p>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-4" style="float:right;">
 					<p>Dokumen yang tidak lengkap adalah :</p>
 				 	<p>1. Surat ukur internasional</p>
 				 	<p>2. Sertifikat keselamatan kapal barang</p>
@@ -100,10 +100,12 @@
 				 	<p>5. Sertifikat bebas tikus</p>
 				</div>
 			</div>
-			<div class="col-sm-12">
-					 <p>Kesimpulan sementara :</p>
-					 <p>Akan ada penyusutan biaya dari dokumen kapal</p>
+
+			<div style="margin-top:350px;padding-left:25px;">
+			<p>Kesimpulan sementara :</p>
+			<p>Akan ada penyusutan biaya dari dokumen kapal</p>
 			</div>
+		
 			</div>
 			 
 			 <a href="<?php echo base_url(); ?>home/survey_kapal_home" class="btn btn-primary col-sm-12" style="margin-bottom:20px;" href="index.html">Lanjut</a>
