@@ -44,52 +44,80 @@
 	        <table class="display">
 	          <thead>
 	            <tr>
-	              <th>Nama</th>
 	              <th>Bagian</th>
+	              <th>Nama</th>
 	              <th>Kondisi</th>
 	              <th>Depresiasi</th>
 	           	</tr>
 	          </thead>
 	          <tbody>
 	            <tr class="odd">
-	              <td rowspan="3">Dek dan tambat</td>
-	              <td>- Jangkar dan rantai</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">Permesinan</td>
+	              <td>Main engine</td>
+	              <td>Bekerja dengan baik</td>
+	              <td>Perawatan</td>
+	            </tr>
+	            <tr class="even">
+	              <td>Mesin bantu</td>
+	              <td>Bekerja dengan baik</td>
+	              <td>Perawatan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td>Poros dan daun kemudi</td>
+	              <td>Setiap dock survey dilakukan reparasi</td>
+	              <td>Perawatan</td>
+	            </tr>
+	            <tr class="even">
+	              <td style="border-bottom: 1px solid #E6E6E6;">Poros dan Baling-baling propeller</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;">Setiap dock survey dilakukan reparasi</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;">Perawatan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="2">Perpipaan</td>
+	              <td>Pipa kamar mesin</td>
+	              <td>Terdapat kebocoran</td>
+	              <td>Perawatan</td>
+	            </tr>
+	            <tr class="even">
+	              <td style="border-bottom: 1px solid #E6E6E6;">Pipa ballast</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;">Terdapat kebocoran</td>
+	              <td style="border-bottom: 1px solid #E6E6E6;">Perawatan</td>
+	            </tr>
+	            <tr class="odd">
+	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="7">Pompa</td>
+	              <td>Pompa air bersih</td>
 	              <td>Ada kerusakan</td>
-	              <td>Tidak</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="even">
-	              <td>- Tali tambat kapal</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa pemadam</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>- Deck machinery</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa bilga</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Navigasi</td>
-	              <td>- Alat navigasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa air ballast</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Keselamatan</td>
-	              <td>- Alat keselamatan</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa BBM</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="even">
-	              <td>Komunikasi</td>
-	              <td>- Alat komunikasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa minyak pelumas</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 	            <tr class="odd">
-	              <td>Akomodasi</td>
-	              <td>- Baranga akomodasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
+	              <td>Pompa pendingin</td>
+	              <td>Ada kerusakan</td>
+	              <td>Perawatan</td>
 	            </tr>
 </body>
 

@@ -9,6 +9,7 @@
   <link href="<?php echo base_url(); ?>assets/css/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo base_url(); ?>assets/css/materialize/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!-- css -->
+  	<link href="<?php echo base_url(); ?>assets/css/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/style.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/mamba/color/default.css" rel="stylesheet" media="screen">

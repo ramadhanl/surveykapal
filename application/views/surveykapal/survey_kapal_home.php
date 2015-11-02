@@ -9,14 +9,13 @@
   <link href="<?php echo base_url(); ?>assets/css/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="<?php echo base_url(); ?>assets/css/materialize/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!-- css -->
+  	<link href="<?php echo base_url(); ?>assets/css/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="<?php echo base_url(); ?>assets/mamba/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo base_url(); ?>assets/mamba/css/style.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/mamba/color/default.css" rel="stylesheet" media="screen">
 	<link href="<?php echo base_url(); ?>assets/css/hover/hover.css" rel="stylesheet" media="screen">
 	<script src="<?php echo base_url(); ?>assets/mamba/js/modernizr.custom.js"></script>
-
-	
-	
 </head>
 
 <!-- Semangat!  -->
@@ -29,22 +28,24 @@
 			</div>
 				<div class="container">
 					<div class="row">
-					<div class="col-md-12" style="margin-top:30px;">
-						<div class="col-md-6">
-							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_dokumen_kapal">Survey <br>Dokumen</a></h1>
-								<div class="line-spacer"></div>
+						<div class="col-md-12" style="margin-top:30px;">
+							<div class="col-md-6">
+								<div class="brand">
+									<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_dokumen_kapal">Survey <br>Dokumen</a></h1>
+									<div class="line-spacer"></div>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_lambung_kapal">Survey <br>Kondisi Kapal</a></h1>
-								<div class="line-spacer"></div>
-								
+							<div class="col-md-6">
+								<div class="brand">
+									<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_lambung_kapal">Survey <br>Kondisi Kapal</a></h1>
+									<div class="line-spacer"></div>
+									
+								</div>
 							</div>
 						</div>
 					</div>
-					</div>
+					<div class="col-md-12" style="margin-top:180px;margin-bottom:20px;">
+						<h3><a style="color:white;" class="hvr-float-shadow" href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></h3>
 				</div>
 		 	</div>
 	 </div>
