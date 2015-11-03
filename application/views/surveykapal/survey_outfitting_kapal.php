@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Survey kondisi kapal</title>
+  <title>Survey Outfitting Kapal</title>
   <!-- css -->
     <link href="<?php echo base_url(); ?>assets/blocks/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/blocks/css/main.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Survey kondisi kapal </p>
+				<p>Survey Outfitting Kapal</p>
 			</div>
 			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap">Rekapitulasi</a>
 			<table class="display">
@@ -30,7 +30,7 @@
 	            <tr>
 	              <th><a href="<?php echo base_url(); ?>home/survey_lambung_kapal">Lambung</a></th>
 	              <th><a href="<?php echo base_url(); ?>home/survey_permesinan_kapal">Permesinan</a></th>
-	              <th style="background-color: #2F8ABB;"><a href="<?php echo base_url(); ?>home/survey_outfitting_kapal">Outfitting</a></th>
+	              <th style="background-color: #FFFFFF;"><a style="color: #2F8ABB;" href="<?php echo base_url(); ?>home/survey_outfitting_kapal">Outfitting</a></th>
 	            </tr>
 	        	</thead>
 	        </table>

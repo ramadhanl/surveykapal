@@ -23,8 +23,9 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Halaman keterangan Kapal </p>
+				<p>Halaman Keterangan Kapal </p>
 			</div>
+				<a style="color:#5bc0de ; font-size:24px">Spesifikasi</a>
 			  <table class="display" style="background-color:white; border-right-width:'0px';border-right-style:solid;">
 	          
 
@@ -32,6 +33,7 @@
 	          
 	          <?php
 				$row = $this->db->get_where('keterangan_kapal', array('ID_Ket' => 1))->row();
+
 				    echo "<tr>";
 				    echo "<td>Length Over All</td>";
 				    echo "<td> : </td>";
@@ -89,8 +91,8 @@
 			 <br>
 			 <div class="col-md-6">
 				<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_kapal_home">Lanjut</a></h1>
-								<div class="line-spacer"></div>
+					<a type="button" class="btn btn-info" href="<?php echo base_url(); ?>home/survey_kapal_home" style="background-color: #2F8ABB ; font-size:20px ; position:absolute ; left:1000px">Lanjut</a>
+						
 								
 				</div>
 			 </div>

@@ -101,7 +101,7 @@
 			 <br>
 			 <div style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:20px;">
 			 <div class="col-sm-12" >
-			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;">Kesimpulan </h4>
+			 <h4 style="text-align:center;margin-bottom:30px;">Kesimpulan </h4>
 				<div class="col-sm-12">
 					 <p>Kapal mengalami penyusutan harga sekitar</p>
 					 <p>Rp 50.000.000.000,00</p><br>
