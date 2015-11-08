@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Survey Outfitting Kapal</p>
+				<p>Survey Kapal</p>
 			</div>
 			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap">Rekapitulasi</a>
 			<table class="display">
@@ -51,46 +51,24 @@
 	           	</tr>
 	          </thead>
 	          <tbody>
-	            <tr class="odd">
-	              <td rowspan="3">Dek dan tambat</td>
-	              <td>- Jangkar dan rantai</td>
-	              <td>Ada kerusakan</td>
-	              <td>Tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>- Tali tambat kapal</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>- Deck machinery</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Navigasi</td>
-	              <td>- Alat navigasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Keselamatan</td>
-	              <td>- Alat keselamatan</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Komunikasi</td>
-	              <td>- Alat komunikasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Akomodasi</td>
-	              <td>- Baranga akomodasi</td>
-	              <td>Semua alat masih berfungsi dengan baik</td>
-	              <td>tidak</td>
-	            </tr>
+	           <?php
+	          	//Permesinan
+	          	$no=0;
+	          	$query = $this->db->get('survey_outfitting_kapal');
+				foreach ($query->result() as $row){
+				if(++$no%2==1)
+					echo "<tr class='odd'>";
+				else
+					echo "<tr class='even'>";
+				if($no==1)
+					echo "<td rowspan='3'>Dek dan tambat</td>";
+				else if($no>3)
+					echo "<td>".$row->Nama_Outfitting."</td>";
+				echo "<td>".$row->Bagian_Outfitting."</td>";
+				echo "<td>".$row->Kondisi_Outfitting."</td>";
+				echo "<td>".$row->Depresiasi_Outfitting."</td></tr>";
+				}
+				?>
 </body>
 
 

@@ -37,15 +37,22 @@
 							</div>
 							<div class="col-md-6">
 								<div class="brand">
-									<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/survey_lambung_kapal">Survey <br>Kondisi Kapal</a></h1>
-									<div class="line-spacer"></div>
+									<?php
+									$row = $this->db->get_where('survey_dokumen', array('id' => 1))->row();
+									$result = strcmp($row->Kondisi_Dokumen, "belum_dibuka");
+									if (!$result) {
+										echo "<h1><a href='#'>Survey <br>Kondisi Kapal</a></h1>";
+									}
+									else{
+										echo "<h1><a class='hvr-float-shadow' href='".base_url()."home/survey_lambung_kapal'>Survey <br>Kondisi Kapal</a></h1><div class='line-spacer'></div>";
+									}?>
 									
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12" style="margin-top:180px;margin-bottom:20px;">
-						<h3><a style="color:white;" class="hvr-float-shadow" href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></h3>
+						<h3><a style="color:white;" class="hvr-grow-shadow" href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></h3>
 				</div>
 		 	</div>
 	 </div>

@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Survey Lambung Kapal</p>
+				<p>Survey Kapal</p>
 			</div>
 			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap">Rekapitulasi</a>
 			<table class="display">
@@ -52,71 +52,30 @@
 	           	</tr>
 	          </thead>
 	          <tbody>
-	            <tr class="odd">
-	              <td rowspan="2">Pelat sisi atas</td>
-	              <td>Tebal pelat</td>
-	              <td>9.7</td>
-	              <td>9.4</td>
-	              <td>9.8</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Depresiasi</td>
-	              <td>tidak</td>
-	              <td>iya</td>
-	              <td>tidak</td>
-	            </tr>
-	             <tr class="odd">
-	              <td rowspan="2">Pelat sisi bawah</td>
-	              <td>Tebal pelat</td>
-	              <td>9.7</td>
-	              <td>9.4</td>
-	              <td>9.8</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Depresiasi</td>
-	              <td>tidak</td>
-	              <td>iya</td>
-	              <td>tidak</td>
-	            </tr>
-	             <tr class="odd">
-	              <td rowspan="2">Pelat keel</td>
-	              <td>Tebal pelat</td>
-	              <td>9.7</td>
-	              <td>9.4</td>
-	              <td>9.8</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Depresiasi</td>
-	              <td>tidak</td>
-	              <td>iya</td>
-	              <td>tidak</td>
-	            </tr>
-	             <tr class="odd">
-	              <td rowspan="2">Pelat bottom</td>
-	              <td>Tebal pelat</td>
-	              <td>9.7</td>
-	              <td>9.4</td>
-	              <td>9.8</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Depresiasi</td>
-	              <td> tidak</td>
-	              <td>iya</td>
-	              <td>tidak</td>
-	            </tr>
-	             <tr class="odd">
-	              <td rowspan="2">Pelat geladak</td>
-	              <td>Tebal pelat</td>
-	              <td>9.7</td>
-	              <td>9.4</td>
-	              <td>9.8</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Depresiasi</td>
-	              <td>tidak</td>
-	              <td>iya</td>
-	              <td>tidak</td>
-	            </tr>
+	          <?php
+	          	$no=0;
+	          	$query = $this->db->get('survey_lambung_kapal');
+				for ($id=1; $id<=5 ; $id++) {
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => $id*3))->row();
+				echo "<tr class='odd'>";
+				echo "<td rowspan='2'>".$row->pelat."</td>";
+				echo "<td>Tebal pelat</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-2))->row();
+				echo "<td>".$row->tebal."</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-1))->row();
+				echo "<td>".$row->tebal."</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-0))->row();
+				echo "<td>".$row->tebal."</td></tr>";
+				echo "<tr class='even'>";
+				echo "<td>Depresiasi</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-2))->row();
+				echo "<td>".$row->depresiasi."</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-1))->row();
+				echo "<td>".$row->depresiasi."</td>";
+				$row = $this->db->get_where('survey_lambung_kapal', array('id' => (3*$id)-0))->row();
+				echo "<td>".$row->depresiasi."</td></tr>";
+				}
+	          ?>
 			 <br>
 </body>
 

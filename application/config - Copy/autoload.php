@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$db= new mysqli('localhost','root','','surveykapal') or die();
+//$db= new mysqli('localhost','root','','vegapunk') or die();
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER

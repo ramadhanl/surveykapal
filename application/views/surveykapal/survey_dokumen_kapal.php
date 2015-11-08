@@ -10,7 +10,6 @@
     <link href="<?php echo base_url(); ?>assets/blocks/css/main.css" rel="stylesheet">
     <!-- DATA TABLE CSS -->
     <link href="<?php echo base_url(); ?>assets/blocks/css/table.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 
 <!-- Semangat!  -->
@@ -34,51 +33,20 @@
 	            </tr>
 	          </thead>
 	          <tbody>
-	           <tr class="odd">
-	              <td>Gross Akte</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Sertifikat kelayakan kapal</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Sertfikat lambung</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Sertifikat mesin</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Surat ukur internasional</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Sertifikat keselamatan kapal barang</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Sertifikat radio komunikasi</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Sertifikat bebas polusi</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Sertifikat bebas tikus</td>
-	              <td>Ada dan masih berlaku</td>
-	              <td>tidak</td>
-	            </tr>
+	          <?php 
+	          for ($id=1; $id<=9 ; $id++) { 
+	          	$row = $this->db->get_where('survey_dokumen', array('id' => $id))->row();
+	          	if ($id%2==0) {
+	          		$class="even";
+	          	}
+	          	else{
+	          		$class="odd";
+	          	}
+	          	echo "<tr class='".$class."'>"."<td>".$row->Nama_Dokumen."</td>";
+	          	echo "<td>".$row->Kondisi_Dokumen."</td>";
+	          	echo "<td>".$row->Depresiasi_Dokumen."</td></tr>";
+				}
+	          ?>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
@@ -87,23 +55,41 @@
 			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;">Kesimpulan sementara </h4>
 				<div class="col-sm-4" style="float:left;">
 					 <p>Dari hasil pengecekan dokumen, dapat diketahui bahwa kapal ini dilengkapi dengan dokumen :</p>
-					 <p>1. Sertifikat kelayakan kapal </p>
-					 <p>2. Sertifikat lambung </p>
-					 <p>3. Sertifikat mesin </p>
+					<?php
+					$no=0;
+					$query = $this->db->get_where('survey_dokumen', array('Depresiasi_Dokumen' => "tidak"));
+					foreach ($query->result() as $row){
+					   echo "<p>".++$no.". ".$row->Nama_Dokumen."</p>";
+					}
+					?>
 				</div>
 				<div class="col-sm-4" style="float:right;">
 					<p>Dokumen yang tidak lengkap adalah :</p>
-				 	<p>1. Surat ukur internasional</p>
-				 	<p>2. Sertifikat keselamatan kapal barang</p>
-				 	<p>3. Sertifikat radio komunikasi</p>
-				 	<p>4. Sertifikat bebas polusi</p>
-				 	<p>5. Sertifikat bebas tikus</p>
+				 	<?php
+					$no=0;
+					$query = $this->db->get_where('survey_dokumen', array('Depresiasi_Dokumen' => "iya"));
+					foreach ($query->result() as $row){
+					   echo "<p>".++$no.". ".$row->Nama_Dokumen."</p>";
+					}
+					?>
 				</div>
 			</div>
 
 			<div style="margin-top:350px;padding-left:25px;">
 			<p>Kesimpulan sementara :</p>
-			<p>Akan ada penyusutan biaya dari dokumen kapal</p>
+			<?php 
+			$row = $this->db->get_where('survey_dokumen', array('id' => 1))->row();
+			$result = strcmp($row->Depresiasi_Dokumen, "iya");
+			if (!$result) {
+				echo "<p>Lebih baik tidak menilai ini karena legalitas kapal tidak bisa dipastikan</p>";
+			}
+			else if ($no==0) {
+				echo "<p>Tidak ada depresiasi/penyusutan</p>";
+			}
+			else{
+				echo "<p>Akan ada penyusutan biaya dari dokumen kapal</p>";
+			}
+			?>
 			</div>
 		
 			</div>

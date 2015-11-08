@@ -10,7 +10,6 @@
     <link href="<?php echo base_url(); ?>assets/blocks/css/main.css" rel="stylesheet">
     <!-- DATA TABLE CSS -->
     <link href="<?php echo base_url(); ?>assets/blocks/css/table.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 
 <!-- Semangat!  -->
@@ -23,79 +22,63 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Halaman Keterangan Kapal </p>
+				<p>Keterangan Kapal </p>
 			</div>
 				<a style="color:#5bc0de ; font-size:24px">Spesifikasi</a>
-			  <table class="display" style="background-color:white; border-right-width:'0px';border-right-style:solid;">
-	          
-
-	          <tbody>
-	          
+			  <table class="display" style="background-color:white;border:5px;">
+	          <tbody style="border:0px;">
 	          <?php
-				$row = $this->db->get_where('keterangan_kapal', array('ID_Ket' => 1))->row();
-
-				    echo "<tr>";
-				    echo "<td>Length Over All</td>";
-				    echo "<td> : </td>";
-      				echo "<td>".$row->Loa."</td>";
+				$row = $this->db->get_where('keterangan_kapal', array('id' => 1))->row();
+					echo "<tr >";
+				    echo "<td style='border:0px;'>Length over all (Loa)</td>";
+				    echo "<td style='border:0px;'> : </td>";
+      				echo "<td style='border:0px;'>".$row->loa." meter</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td>Length Between Perpendicular</td>";
-      				echo "<td> : </td>";
-      				echo "<td>".$row->Lpp."</td>";
+      				echo "<td style='border:0px;'>Length between berpendicular (Lpp)</td>";
+      				echo "<td style='border:0px;'> : </td>";
+      				echo "<td style='border:0px;'>".$row->lpp." meter</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td>Draught Design</td>";
-				    echo "<td> : </td>";
-      				echo "<td>".$row->D_Design."</td>";
+      				echo "<td style='border:0px;'>Draught design (D des.)</td>";
+				    echo "<td style='border:0px;'> : </td>";
+      				echo "<td style='border:0px;'>".$row->d_design." meter</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td>Depth Moulded</td>";
-				    echo "<td> : </td>";
-      				echo "<td>".$row->H_Mld."</td>";
+      				echo "<td style='border:0px;'>Depth moulded (H mld)</td>";
+				    echo "<td style='border:0px;'> : </td>";
+      				echo "<td style='border:0px;'>".$row->h_mld." meter</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td>Breadth Moulded</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->B_Mld."</td>";
+      				echo "<td style='border:0px;'>Breadth moulded (B mld)</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->b_mld." meter</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
-	 				echo "<td>Service Speed 85% MCR</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->Vs."</td>";
+	 				echo "<td style='border:0px;'>Service speed (Vs)</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->vs." knot</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
-	 				echo "<td>Complement</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->Complement."</td>";
+	 				echo "<td style='border:0px;'>Engine output</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->engine_output." knot</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
-	 				echo "<td>Engine Output</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->Engine_Output."</td>";
+	 				echo "<td style='border:0px;'>Bollard pull</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->bollard_pull." knot</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
-	 				echo "<td>Bollard Pull</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->Bollard_Pull."</td>";
-	 				echo "</tr>";
-	 				echo "<tr>";
-	 				echo "<td>Harga Pembangunan</td>";
-				    echo "<td> : </td>";
-	 				echo "<td>".$row->Harga."</td>";
+	 				echo "<td style='border:0px;'>Harga pembangunan</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>Rp ".number_format($row->harga,2,',','.')."</td>";
 	 				echo "</tr>"
-	 				
 				?>
 	          </tbody>
 	         </table><!--/END First Table -->
 			 <br>
-			 <div class="col-md-6">
-				<div class="brand">
-					<a type="button" class="btn btn-info" href="<?php echo base_url(); ?>home/survey_kapal_home" style="background-color: #2F8ABB ; font-size:20px ; position:absolute ; left:1000px">Lanjut</a>
-						
-								
-				</div>
-			 </div>
+			 <a type="button" class="btn btn-info" href="<?php echo base_url(); ?>home/survey_kapal_home" style="width:100%;float:right;position:relative;background-color: #2F8ABB;">Lanjut</a>
 			 
 </body>
 

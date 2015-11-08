@@ -22,7 +22,7 @@
 	<div class="row">
 		<div class="col-sm-12 col-lg-12">
 			<div class="judul-konten">
-				<p>Survey Permesinan Kapal</p>
+				<p>Survey Kapal</p>
 			</div>
 			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap">Rekapitulasi</a>
 			<table class="display">
@@ -44,6 +44,7 @@
 	        <table class="display">
 	          <thead>
 	            <tr>
+	            	<th></th>
 	              <th>Bagian</th>
 	              <th>Nama</th>
 	              <th>Kondisi</th>
@@ -51,74 +52,55 @@
 	           	</tr>
 	          </thead>
 	          <tbody>
-	            <tr class="odd">
-	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="4">Permesinan</td>
-	              <td>Main engine</td>
-	              <td>Bekerja dengan baik</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Mesin bantu</td>
-	              <td>Bekerja dengan baik</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Poros dan daun kemudi</td>
-	              <td>Setiap dock survey dilakukan reparasi</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td style="border-bottom: 1px solid #E6E6E6;">Poros dan Baling-baling propeller</td>
-	              <td style="border-bottom: 1px solid #E6E6E6;">Setiap dock survey dilakukan reparasi</td>
-	              <td style="border-bottom: 1px solid #E6E6E6;">Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="2">Perpipaan</td>
-	              <td>Pipa kamar mesin</td>
-	              <td>Terdapat kebocoran</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td style="border-bottom: 1px solid #E6E6E6;">Pipa ballast</td>
-	              <td style="border-bottom: 1px solid #E6E6E6;">Terdapat kebocoran</td>
-	              <td style="border-bottom: 1px solid #E6E6E6;">Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td style="border-bottom: 1px solid #E6E6E6;" class="center" rowspan="7">Pompa</td>
-	              <td>Pompa air bersih</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Pompa pemadam</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Pompa bilga</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Pompa air ballast</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Pompa BBM</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="even">
-	              <td>Pompa minyak pelumas</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
-	            <tr class="odd">
-	              <td>Pompa pendingin</td>
-	              <td>Ada kerusakan</td>
-	              <td>Perawatan</td>
-	            </tr>
+	          <?php
+	          	//Permesinan
+	          	$no=0;
+	          	$query = $row = $this->db->get_where('survey_permesinan_kapal', array('Bagian_Permesinan' => "Permesinan"));
+				foreach ($query->result() as $row){
+				if(++$no%2==1)
+					echo "<tr class='odd'>";
+				else
+					echo "<tr class='even'>";
+				if($no==1)
+				echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='4'>Permesinan</td>";
+				echo "<td>Tebal pelat</td>";
+				echo "<td>".$row->Nama_Permesinan."</td>";
+				echo "<td>".$row->Kondisi_Permesinan."</td>";
+				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
+				}
+
+				//Perpipaan
+				$no=0;
+				$query = $row = $this->db->get_where('survey_permesinan_kapal', array('Bagian_Permesinan' => "Perpipaan"));
+				foreach ($query->result() as $row){
+				if(++$no%2==1)
+					echo "<tr class='odd'>";
+				else
+					echo "<tr class='even'>";
+				if($no==1)
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='2'>Perpipaan</td>";
+				echo "<td>Tebal pelat</td>";
+				echo "<td>".$row->Nama_Permesinan."</td>";
+				echo "<td>".$row->Kondisi_Permesinan."</td>";
+				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
+				}
+
+				//Pompa
+				$no=0;
+				$query = $row = $this->db->get_where('survey_permesinan_kapal', array('Bagian_Permesinan' => "Pompa"));
+				foreach ($query->result() as $row){
+				if(++$no%2==1)
+					echo "<tr class='odd'>";
+				else
+					echo "<tr class='even'>";
+				if($no==1)
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='7'>Perpipaan</td>";
+				echo "<td>Tebal pelat</td>";
+				echo "<td>".$row->Nama_Permesinan."</td>";
+				echo "<td>".$row->Kondisi_Permesinan."</td>";
+				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
+				}
+	          ?>
 </body>
 
 

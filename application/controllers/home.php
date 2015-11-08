@@ -24,6 +24,9 @@ class Home extends CI_Controller {
 	}
 	public function keterangan_kapal()
 	{
+		$id = mt_rand(1,$this->db->count_all('contoh_kapal'));
+		$this->load->model("data");
+		$this->data->set_spesifikasi_kapal($id);
 		$this->load->view('surveykapal/keterangan_kapal');
 	}
 	public function rekapitulasi_hasil_survey()
@@ -32,10 +35,16 @@ class Home extends CI_Controller {
 	}
 	public function survey_dokumen_kapal()
 	{
+		$this->load->model("data");
+		$this->data->set_kondisi_dokumen();
+		$this->data->set_lambung_kapal();
+		$this->data->set_permesinan_kapal();
+		$this->data->set_outfitting_kapal();
 		$this->load->view('surveykapal/survey_dokumen_kapal');
 	}
 	public function survey_kapal_home()
 	{
+		$this->load->model("data");
 		$this->load->view('surveykapal/survey_kapal_home');
 	}
 	public function survey_kondisi_kapal()
