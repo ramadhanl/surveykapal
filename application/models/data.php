@@ -3,6 +3,18 @@ class data extends CI_Model{
 	function __construct() {
 		parent::__construct();
 	}
+	public function login($username, $password){
+		$this -> db -> select('username, nama, password');
+	   	$this -> db -> from('user');
+	   	$this -> db -> where('username', $username);
+	   	$this -> db -> where('password', $password);
+	   	$this -> db -> limit(1);
+	 	$query = $this -> db -> get();
+	 	if($query -> num_rows() == 0)
+	     return false;
+	   else
+	     return $query->result();
+	 }
 	public function set_spesifikasi_kapal($id){
 		$row = $this->db->get_where('contoh_kapal', array('id' => $id))->row();
 		$data = array(
@@ -139,18 +151,5 @@ class data extends CI_Model{
 	   	if($query -> num_rows() == 1) return $query->first_row();
 	    else return false;
 	}
-
-	public function login($email, $password){
-		$this -> db -> select('email, nama, password,hak_akses');
-	   	$this -> db -> from('user');
-	   	$this -> db -> where('email', $email);
-	   	$this -> db -> where('password', $password);
-	   	$this -> db -> limit(1);
-	 	$query = $this -> db -> get();
-	 	if($query -> num_rows() == 0)
-	     return false;
-	   else
-	     return $query->result();
-	 }
 
 }

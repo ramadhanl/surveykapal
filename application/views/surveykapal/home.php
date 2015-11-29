@@ -33,20 +33,21 @@
 					<div class="col-md-12">
 						<div class="col-md-6">
 							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="#">Manual</a></h1>
+								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/tambahkapal">Manual</a></h1>
 								<div class="line-spacer"></div>
-								<p><span>Deskripsi menu</span></p>
+								<p><span></span></p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="brand">
 								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/keterangan_kapal">Survey</a></h1>
 								<div class="line-spacer"></div>
-								<p><span>Deskripsi menu</span></p>
+								<p><span></span></p>
 							</div>
 						</div>
 						<div class="bottom-intro">
-							<p>Jurusan Teknik Perkapalan</p>
+							<p><a style="border-radius:20px; background-color:white;color:black; padding:10px; margin-bottom:20px;" href="<?php echo base_url(); ?>home/logout">Logout</a></p>
+							<br><p>Jurusan Teknik Perkapalan</p>
 							<p>Fakultas Teknologi Kelautan</p>
 							<p>Institut Teknologi Sepuluh Nopember Surabaya</p>
 						</div>

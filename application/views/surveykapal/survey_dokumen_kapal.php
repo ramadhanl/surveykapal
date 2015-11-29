@@ -14,7 +14,7 @@
 
 <!-- Semangat!  -->
 
-<body>
+<body style="font-size:20px;">
   	<div class="container">
 
       <!-- CONTENT -->
@@ -52,8 +52,8 @@
 			 <br>
 			 <div style="border:3px;border-style:solid;border-color:#E6E6E6;margin-bottom:20px;">
 			 <div class="col-sm-12" >
-			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;">Kesimpulan sementara </h4>
-				<div class="col-sm-4" style="float:left;">
+			 <h4 style="text-decoration:underline;text-align:center;margin-bottom:30px;font-size:40px;">Kesimpulan sementara </h4>
+				<div class="col-sm-6" style="float:left;">
 					 <p>Dari hasil pengecekan dokumen, dapat diketahui bahwa kapal ini dilengkapi dengan dokumen :</p>
 					<?php
 					$no=0;
@@ -75,7 +75,8 @@
 				</div>
 			</div>
 
-			<div style="margin-top:350px;padding-left:25px;">
+			<div style="margin-top:450px;padding-left:25px;">
+			<br>
 			<p>Kesimpulan sementara :</p>
 			<?php 
 			$row = $this->db->get_where('survey_dokumen', array('id' => 1))->row();

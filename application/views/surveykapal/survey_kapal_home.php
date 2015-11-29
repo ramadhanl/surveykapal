@@ -51,8 +51,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12" style="margin-top:180px;margin-bottom:20px;">
+					<p style="margin-top:70px;color:white;font-size: 20px;">Keterangan : Dalam melakukan penilaian kapal, bagian yang dicek dahulu adalah dokumen kapal kemudian kondisi kapal. Kondisi kapal dapat diakses apabila dokumen kapal sudah diakses.</p>
+					<div class="col-md-12" style="margin-top:80px;margin-bottom:20px;">
 						<h3><a style="color:white;" class="hvr-grow-shadow" href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></h3>
+					
 				</div>
 		 	</div>
 	 </div>

@@ -29,30 +29,31 @@
 	          <tbody style="border:0px;">
 	          <?php
 				$row = $this->db->get_where('keterangan_kapal', array('id' => 1))->row();
+				if($row->loa!=0){
 					echo "<tr >";
 				    echo "<td style='border:0px;'>Length over all (Loa)</td>";
 				    echo "<td style='border:0px;'> : </td>";
-      				echo "<td style='border:0px;'>".$row->loa." meter</td>";
+      				echo "<td style='border:0px;'>".$row->loa." m</td>";
       				echo "</tr>";
       				echo "<tr>";
       				echo "<td style='border:0px;'>Length between berpendicular (Lpp)</td>";
       				echo "<td style='border:0px;'> : </td>";
-      				echo "<td style='border:0px;'>".$row->lpp." meter</td>";
+      				echo "<td style='border:0px;'>".$row->lpp." m</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td style='border:0px;'>Draught design (D des.)</td>";
+      				echo "<td style='border:0px;'>Draught (D)</td>";
 				    echo "<td style='border:0px;'> : </td>";
-      				echo "<td style='border:0px;'>".$row->d_design." meter</td>";
+      				echo "<td style='border:0px;'>".$row->d_design." m</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td style='border:0px;'>Depth moulded (H mld)</td>";
+      				echo "<td style='border:0px;'>Depth (H)</td>";
 				    echo "<td style='border:0px;'> : </td>";
-      				echo "<td style='border:0px;'>".$row->h_mld." meter</td>";
+      				echo "<td style='border:0px;'>".$row->h_mld." m</td>";
       				echo "</tr>";
       				echo "<tr>";
-      				echo "<td style='border:0px;'>Breadth moulded (B mld)</td>";
+      				echo "<td style='border:0px;'>Breadth (B)</td>";
 				    echo "<td style='border:0px;'> : </td>";
-	 				echo "<td style='border:0px;'>".$row->b_mld." meter</td>";
+	 				echo "<td style='border:0px;'>".$row->b_mld." m</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
 	 				echo "<td style='border:0px;'>Service speed (Vs)</td>";
@@ -62,18 +63,41 @@
 	 				echo "<tr>";
 	 				echo "<td style='border:0px;'>Engine output</td>";
 				    echo "<td style='border:0px;'> : </td>";
-	 				echo "<td style='border:0px;'>".$row->engine_output." knot</td>";
+	 				echo "<td style='border:0px;'>".$row->engine_output." HP</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
 	 				echo "<td style='border:0px;'>Bollard pull</td>";
 				    echo "<td style='border:0px;'> : </td>";
-	 				echo "<td style='border:0px;'>".$row->bollard_pull." knot</td>";
+	 				echo "<td style='border:0px;'>".$row->bollard_pull." Tons</td>";
 	 				echo "</tr>";
 	 				echo "<tr>";
 	 				echo "<td style='border:0px;'>Harga pembangunan</td>";
 				    echo "<td style='border:0px;'> : </td>";
 	 				echo "<td style='border:0px;'>Rp ".number_format($row->harga,2,',','.')."</td>";
-	 				echo "</tr>"
+	 				echo "</tr>";
+	 			}
+	 			else{
+	 				echo "<tr>";
+      				echo "<td style='border:0px;'>Length between berpendicular (Lpp)</td>";
+      				echo "<td style='border:0px;'> : </td>";
+      				echo "<td style='border:0px;'>".$row->lpp." m</td>";
+      				echo "</tr>";
+      				echo "<tr>";
+	 				echo "<td style='border:0px;'>Engine output</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->engine_output." HP</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td style='border:0px;'>Tahun</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>".$row->tahun."</td>";
+	 				echo "</tr>";
+	 				echo "<tr>";
+	 				echo "<td style='border:0px;'>Harga pembangunan</td>";
+				    echo "<td style='border:0px;'> : </td>";
+	 				echo "<td style='border:0px;'>Rp ".number_format($row->harga,2,',','.')."</td>";
+	 				echo "</tr>";
+	 			}
 				?>
 	          </tbody>
 	         </table><!--/END First Table -->

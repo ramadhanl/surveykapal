@@ -15,7 +15,7 @@
 
 <!-- Semangat!  -->
 
-<body>
+<body style="font-size:20px;">
   	<div class="container">
 
       <!-- CONTENT -->
