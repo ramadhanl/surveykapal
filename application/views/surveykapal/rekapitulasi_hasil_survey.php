@@ -79,6 +79,17 @@
 						if(strcmp($row->depresiasi, "iya")==0)
 							echo "<td>"."Ada kerusakan pada ".$row->pelat." di bagian ".$row->nama_bagian."</td>";
 					}}
+					if($no==0){
+					echo "<tr class='odd'>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>1</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>Kondisi Lambung</td>";
+					echo "<td>[Tidak Ada Kerusakan]</td>";
+					$presentase=95;
+					$total1=$presentase*0.4;
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>40%</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($presentase, 2, PHP_ROUND_HALF_DOWN)."%</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($total1, 2, PHP_ROUND_HALF_DOWN)."%</td></tr>";
+				}
 
 	          	//Permesinan
 	          	$no=0;
@@ -122,6 +133,17 @@
 					if(strcmp($row->Depresiasi_Permesinan, "perbaikan")==0)
 						echo "<td>"."Ada kerusakan pada ".$row->Nama_Permesinan."</td></tr>";
 				}}
+				if($no==0){
+					echo "<tr class='odd'>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>2</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>Kondisi Permesinan</td>";
+					echo "<td>[Tidak Ada Kerusakan]</td>";
+					$presentase=95;
+					$total2=$presentase*0.4;
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>40%</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($presentase, 2, PHP_ROUND_HALF_DOWN)."%</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($total2, 2, PHP_ROUND_HALF_DOWN)."%</td></tr>";
+				}
 
 				//Outfitting
 	          	$no=0;
@@ -153,7 +175,7 @@
 					else if($total3>1){
 						$presentase = 80;
 					}
-					else if($total3>0){
+					else if($total3>=0){
 						$presentase = 75;
 					}
 					$total3 = $presentase*0.2;
@@ -170,8 +192,8 @@
 					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>3</td>";
 					echo "<td style='border-bottom: 1px solid #E6E6E6;'' class='center' '>Kondisi Outfitting</td>";
 					echo "<td>[Tidak Ada Kerusakan]</td>";
-					$presentase=75;
-					$total3=75*0.2;
+					$presentase=95;
+					$total3=$presentase*0.2;
 					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>20%</td>";
 					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($presentase, 2, PHP_ROUND_HALF_DOWN)."%</td>";
 					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center'>".round($total3, 2, PHP_ROUND_HALF_DOWN)."%</td></tr>";
