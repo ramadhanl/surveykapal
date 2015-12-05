@@ -30,28 +30,18 @@
 			</div>
 				<div class="container">
 					<div class="row">
-					<div class="col-md-12">
-						<div class="col-md-6">
-							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/tambahkapal">Manual</a></h1>
-								<div class="line-spacer"></div>
-								<p><span></span></p>
-							</div>
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<div class="brand">
+						<form action="<?php echo base_url(); ?>home/login_proses" method="POST">
+							<input name="username" type="text" style="height:50px;font-size:40px;color:white;text-align:center;" placeholder="Username">
+							<input name="password" type="password" style="height:50px;font-size:40px;color:white;text-align:center;" placeholder="Password">
+							<input type="submit" value="Login" style="height:50px;width:100%;">
+						</form>
 						</div>
-						<div class="col-md-6">
-							<div class="brand">
-								<h1><a class="hvr-float-shadow" href="<?php echo base_url(); ?>home/keterangan_kapal">Survey</a></h1>
-								<div class="line-spacer"></div>
-								<p><span></span></p>
-							</div>
-						</div>
-						<div class="bottom-intro">
-							<p><a style="color:black;display:block;" href="<?php echo base_url(); ?>home/evaluasi1">Evaluasi</a></p>
-							<br><p><a style="border-radius:20px; background-color:white;color:black; padding:10px; margin-bottom:20px;" href="<?php echo base_url(); ?>home/logout">Logout</a></p>
-							<br><p>Jurusan Teknik Perkapalan</p>
-							<p>Fakultas Teknologi Kelautan</p>
-							<p>Institut Teknologi Sepuluh Nopember Surabaya</p>
-						</div>
+					</div>
+					<div class="col-md-4">
 					</div>
 					</div>
 				</div>

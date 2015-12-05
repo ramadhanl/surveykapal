@@ -24,7 +24,8 @@
 			<div class="judul-konten">
 				<p>Survey Kapal</p>
 			</div>
-			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap">Rekapitulasi</a>
+			<a href="<?php echo base_url(); ?>home/rekapitulasi_hasil_survey" class="rekap col-md-6">Rekapitulasi</a>
+			<a class="rekap col-md-6" style="float:right;" href="<?php echo base_url(); ?>home/teori_kondisi_kapal">Teori</a>
 			<table class="display">
 	          	<thead>
 	            <tr>

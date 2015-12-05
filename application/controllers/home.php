@@ -26,6 +26,50 @@ class Home extends CI_Controller {
 		else
 			redirect(base_url("home/login/"));
 	}
+	public function evaluasi1()
+	{
+		$this->load->view('evaluasi/evaluasi1');
+	}
+	public function evaluasi2()
+	{
+		$this->load->view('evaluasi/evaluasi2');
+	}
+	public function evaluasi3()
+	{
+		$this->load->view('evaluasi/evaluasi3');
+	}
+	public function evaluasi4()
+	{
+		$this->load->view('evaluasi/evaluasi4');
+	}
+	public function teori1()
+	{
+		$this->load->view('surveykapal/teori1');
+	}
+	public function teori2()
+	{
+		$this->load->view('surveykapal/teori2');
+	}
+	public function teori_kondisi_kapal()
+	{
+		$this->load->view('surveykapal/teori_kondisi_kapal');
+	}
+	public function teori_survey_kapal()
+	{
+		$this->load->view('surveykapal/teori_survey_kapal');
+	}
+	public function teori_lambung_kapal()
+	{
+		$this->load->view('surveykapal/teori_lambung_kapal');
+	}
+	public function teori_outfitting_kapal()
+	{
+		$this->load->view('surveykapal/teori_outfitting_kapal');
+	}
+	public function teori_permesinan_kapal()
+	{
+		$this->load->view('surveykapal/teori_permesinan_kapal');
+	}
 	public function login()
 	{
 		$this->load->view('surveykapal/login');

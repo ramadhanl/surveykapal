@@ -23,6 +23,7 @@
 			<div class="judul-konten">
 				<p>Survey Dokumen Kapal</p>
 			</div>
+			<a href="<?php echo base_url(); ?>home/teori1" class="rekap">Teori</a>
 			  <table class="display">
 	          <thead>
 	            <tr>
