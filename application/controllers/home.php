@@ -26,6 +26,46 @@ class Home extends CI_Controller {
 		else
 			redirect(base_url("home/login/"));
 	}
+	public function teori_awal()
+	{
+		$this->load->view('teori/teori1');
+	}
+	public function teori_awal2()
+	{
+		$this->load->view('teori/teori2');
+	}
+	public function teori_awal3()
+	{
+		$this->load->view('teori/teori3');
+	}
+	public function teori1_awal()
+	{
+		$this->load->view('teori/subteori/teori1');
+	}
+	public function teori2_awal()
+	{
+		$this->load->view('teori/subteori/teori2');
+	}
+	public function teori_awal_kondisi_kapal()
+	{
+		$this->load->view('teori/subteori/teori_kondisi_kapal');
+	}
+	public function teori_awal_survey_kapal()
+	{
+		$this->load->view('teori/subteori/teori_survey_kapal');
+	}
+	public function teori_awal_lambung_kapal()
+	{
+		$this->load->view('teori/subteori/teori_lambung_kapal');
+	}
+	public function teori_awal_outfitting_kapal()
+	{
+		$this->load->view('teori/subteori/teori_outfitting_kapal');
+	}
+	public function teori_awal_permesinan_kapal()
+	{
+		$this->load->view('teori/subteori/teori_permesinan_kapal');
+	}
 	public function evaluasi1()
 	{
 		$this->load->view('evaluasi/evaluasi1');
@@ -41,6 +81,30 @@ class Home extends CI_Controller {
 	public function evaluasi4()
 	{
 		$this->load->view('evaluasi/evaluasi4');
+	}
+	public function evaluasi5()
+	{
+		$this->load->view('evaluasi/evaluasi5');
+	}
+	public function evaluasi6()
+	{
+		$this->load->view('evaluasi/evaluasi6');
+	}
+	public function evaluasi7()
+	{
+		$this->load->view('evaluasi/evaluasi7');
+	}
+	public function evaluasi8()
+	{
+		$this->load->view('evaluasi/evaluasi8');
+	}
+	public function evaluasi9()
+	{
+		$this->load->view('evaluasi/evaluasi9');
+	}
+	public function evaluasi10()
+	{
+		$this->load->view('evaluasi/evaluasi10');
 	}
 	public function teori1()
 	{
