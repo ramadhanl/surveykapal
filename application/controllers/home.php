@@ -137,7 +137,7 @@ class Home extends CI_Controller {
 		$jawaban_benar = 16889677820;
 		if ($this->input->post('jawaban')==$jawaban_benar)
 			$this->load->view('evaluasi/evaluasi9_benar',array('jawaban'=>$this->input->post('jawaban')));
-		else if($this->input->post('jawaban')>=13000000000 && $this->input->post('jawaban')<=16000000000)
+		else if($this->input->post('jawaban')>=13000000000 && $this->input->post('jawaban')<=17000000000)
 			$this->load->view('evaluasi/evaluasi9_hampir',array('jawaban'=>$this->input->post('jawaban')));
 		else
 			$this->load->view('evaluasi/evaluasi9_salah',array('jawaban'=>$this->input->post('jawaban')));
