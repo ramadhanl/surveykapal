@@ -63,43 +63,21 @@
           </ol>
         </div>
         <h4  style="color:#5bc0de;font-size:18px;margin-bottom:15px;">Berapa perkiraan harga dari kapal tersebut?</h4>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">A. Rp. 11.889.677.820</a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">B. Rp. 15.889.677.820</a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#benar">C. Rp. 16.889.677.820 </a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">D. Rp. 13.889.677.820</a>
-         </div>
-        <div id="benar" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>Selamat!</h2>
-            <p>Jawaban yang benar adalah c. Rp. 16.889.677.820 </p>
-            <div class="col-md-6">
-              <a class="pilihan" href="<?php echo base_url(); ?>home/evaluasi10">Soal selanjutnya</a>
+         <form  action="<?php echo base_url();?>home/cek_evaluasi9" method="POST">
+            <div class="col-md-12" style="padding:0px !important;">
+            <div class="col-md-1" style="padding:0px !important;">
+              <font class="tulisan" >Rp</font>
             </div>
-            <div class="col-md-6">
-              <a class="pilihan" href="<?php echo base_url(); ?>">Kembali</a>
+            <div class="col-md-3" style="padding:0px !important;">
+              <input class="jawaban" type="text" name="jawaban" placeholder="[Masukan perkiraan harga]">
             </div>
-          </div>
-        </div>
-        <div id="salah" class="modalDialog">
-          <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>Hampir benar! </h2>
-            <p>Jawaban yang benar adalah c. Rp. 16.889.677.820 </p>
-            <div class="col-md-6">
-              <a class="pilihan" href="<?php echo base_url(); ?>home/evaluasi10">Soal selanjutnya</a>
+            <div class="col-md-1" style="padding:0px !important;">
+              <font class="tulisan">,00</font>
+            </div></div>
+            <div class="col-md-6" style="padding:0px !important;">
+              <input class="jawaban_submit" type="submit" value="Jawab">
             </div>
-            <div class="col-md-6">
-              <a class="pilihan" href="<?php echo base_url(); ?>">Kembali</a>
             </div>
-          </div>
-        </div>
+         </form>
     </body>
 

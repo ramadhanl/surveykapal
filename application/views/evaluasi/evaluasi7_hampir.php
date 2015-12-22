@@ -61,13 +61,13 @@
           </ol>
         </div>
         <h4  style="color:#5bc0de;font-size:18px;margin-bottom:15px;">Berapa perkiraan harga dari kapal tersebut?</h4>
-         <form  action="<?php echo base_url();?>home/cek_evaluasi7" method="POST">
+         <form  action="<?php echo base_url();?>home/cek_evaluasi6" method="POST">
             <div class="col-md-12" style="padding:0px !important;">
             <div class="col-md-1" style="padding:0px !important;">
               <font class="tulisan" >Rp</font>
             </div>
             <div class="col-md-3" style="padding:0px !important;">
-              <input class="jawaban" type="text" name="jawaban" placeholder="[Masukan perkiraan harga]">
+              <input class="jawaban" type="text" name="jawaban" placeholder="[Masukan perkiraan harga]" value="<?php echo $jawaban;?>">
             </div>
             <div class="col-md-1" style="padding:0px !important;">
               <font class="tulisan">,00</font>
@@ -77,5 +77,18 @@
             </div>
             </div>
          </form>
+         <div id="benar" class="modalDialog2">
+          <div>
+            <a href="<?php echo base_url();?>home/evaluasi7" title="Close" class="close2">X</a>
+            <h2>Selamat!</h2>
+            <p>Jawaban anda benar</p>
+            <div class="col-md-6">
+              <a class="pilihan" href="<?php echo base_url(); ?>home/evaluasi8">Soal selanjutnya</a>
+            </div>
+            <div class="col-md-6">
+              <a class="pilihan" href="<?php echo base_url(); ?>">Kembali</a>
+            </div>
+          </div>
+        </div>
     </body>
 

@@ -66,19 +66,23 @@
           </ol>
         </div>
         <h4  style="color:#5bc0de;font-size:18px;margin-bottom:15px;">Berapa perkiraan harga dari kapal tersebut?</h4>
-         <div class="col-md-6">
-         <a class="pilihan" href="#benar">A. Rp. 47.889.261.031 </a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">B. Rp. 50.889.261.031</a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">C. Rp. 55.889.261.031</a>
-         </div>
-         <div class="col-md-6">
-         <a class="pilihan" href="#salah">D. Rp. 45.889.261.031</a>
-         </div>
-        <div id="benar" class="modalDialog">
+         <form  action="<?php echo base_url();?>home/cek_evaluasi6" method="POST">
+            <div class="col-md-12" style="padding:0px !important;">
+            <div class="col-md-1" style="padding:0px !important;">
+              <font class="tulisan" >Rp</font>
+            </div>
+            <div class="col-md-3" style="padding:0px !important;">
+              <input class="jawaban" type="text" name="jawaban" placeholder="[Masukan perkiraan harga]">
+            </div>
+            <div class="col-md-1" style="padding:0px !important;">
+              <font class="tulisan">,00</font>
+            </div></div>
+            <div class="col-md-6" style="padding:0px !important;">
+              <input class="jawaban_submit" type="submit" value="Jawab">
+            </div>
+            </div>
+         </form>
+         <div id="benar" class="modalDialog">
           <div>
             <a href="#close" title="Close" class="close">X</a>
             <h2>Selamat!</h2>

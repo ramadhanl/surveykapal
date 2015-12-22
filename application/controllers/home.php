@@ -90,21 +90,71 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('evaluasi/evaluasi6');
 	}
+	public function cek_evaluasi6()
+	{
+		$jawaban_benar = 47889261031;
+		if ($this->input->post('jawaban')==$jawaban_benar)
+			$this->load->view('evaluasi/evaluasi6_benar',array('jawaban'=>$this->input->post('jawaban')));
+		else if($this->input->post('jawaban')>=43000000000 && $this->input->post('jawaban')<=48000000000)
+			$this->load->view('evaluasi/evaluasi6_hampir',array('jawaban'=>$this->input->post('jawaban')));
+		else
+			$this->load->view('evaluasi/evaluasi6_salah',array('jawaban'=>$this->input->post('jawaban')));
+	}
 	public function evaluasi7()
 	{
 		$this->load->view('evaluasi/evaluasi7');
+	}
+	public function cek_evaluasi7()
+	{
+		$jawaban_benar = 18677904138;
+		if ($this->input->post('jawaban')==$jawaban_benar)
+			$this->load->view('evaluasi/evaluasi7_benar',array('jawaban'=>$this->input->post('jawaban')));
+		else if($this->input->post('jawaban')>=15000000000 && $this->input->post('jawaban')<=19000000000)
+			$this->load->view('evaluasi/evaluasi7_hampir',array('jawaban'=>$this->input->post('jawaban')));
+		else
+			$this->load->view('evaluasi/evaluasi7_salah',array('jawaban'=>$this->input->post('jawaban')));
 	}
 	public function evaluasi8()
 	{
 		$this->load->view('evaluasi/evaluasi8');
 	}
+	public function cek_evaluasi8()
+	{
+		$jawaban_benar = 19223992819;
+		if ($this->input->post('jawaban')==$jawaban_benar)
+			$this->load->view('evaluasi/evaluasi8_benar',array('jawaban'=>$this->input->post('jawaban')));
+		else if($this->input->post('jawaban')>=14000000000 && $this->input->post('jawaban')<=17000000000)
+			$this->load->view('evaluasi/evaluasi8_hampir',array('jawaban'=>$this->input->post('jawaban')));
+		else
+			$this->load->view('evaluasi/evaluasi8_salah',array('jawaban'=>$this->input->post('jawaban')));
+	}
 	public function evaluasi9()
 	{
 		$this->load->view('evaluasi/evaluasi9');
 	}
+	public function cek_evaluasi9()
+	{
+		$jawaban_benar = 16889677820;
+		if ($this->input->post('jawaban')==$jawaban_benar)
+			$this->load->view('evaluasi/evaluasi9_benar',array('jawaban'=>$this->input->post('jawaban')));
+		else if($this->input->post('jawaban')>=13000000000 && $this->input->post('jawaban')<=16000000000)
+			$this->load->view('evaluasi/evaluasi9_hampir',array('jawaban'=>$this->input->post('jawaban')));
+		else
+			$this->load->view('evaluasi/evaluasi9_salah',array('jawaban'=>$this->input->post('jawaban')));
+	}
 	public function evaluasi10()
 	{
 		$this->load->view('evaluasi/evaluasi10');
+	}
+	public function cek_evaluasi10()
+	{
+		$jawaban_benar = 22592037940;
+		if ($this->input->post('jawaban')==$jawaban_benar)
+			$this->load->view('evaluasi/evaluasi10_benar',array('jawaban'=>$this->input->post('jawaban')));
+		else if($this->input->post('jawaban')>=19000000000 && $this->input->post('jawaban')<=23000000000)
+			$this->load->view('evaluasi/evaluasi10_hampir',array('jawaban'=>$this->input->post('jawaban')));
+		else
+			$this->load->view('evaluasi/evaluasi10_salah',array('jawaban'=>$this->input->post('jawaban')));
 	}
 	public function teori1()
 	{

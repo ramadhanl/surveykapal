@@ -71,7 +71,7 @@
          <a class="pilihan" href="#benar">A. Rp. 44.953.101.306</a>
          </div>
          <div class="col-md-6">
-         <a class="pilihan" href="#salah">B. Rp. 44.953.101.306</a>
+         <a class="pilihan" href="#salah">B. Rp. 42.953.101.306</a>
          </div>
          <div class="col-md-6">
          <a class="pilihan" href="#salah">C. Rp. 35.953.101.306</a>

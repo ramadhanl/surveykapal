@@ -46,7 +46,6 @@
 	          <thead>
 	            <tr>
 	            	<th></th>
-	              <th>Bagian</th>
 	              <th>Nama</th>
 	              <th>Kondisi</th>
 	              <th>Depresiasi</th>
@@ -64,7 +63,6 @@
 					echo "<tr class='even'>";
 				if($no==1)
 				echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='4'>Permesinan</td>";
-				echo "<td>Tebal pelat</td>";
 				echo "<td>".$row->Nama_Permesinan."</td>";
 				echo "<td>".$row->Kondisi_Permesinan."</td>";
 				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
@@ -80,7 +78,6 @@
 					echo "<tr class='even'>";
 				if($no==1)
 					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='2'>Perpipaan</td>";
-				echo "<td>Tebal pelat</td>";
 				echo "<td>".$row->Nama_Permesinan."</td>";
 				echo "<td>".$row->Kondisi_Permesinan."</td>";
 				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
@@ -95,13 +92,15 @@
 				else
 					echo "<tr class='even'>";
 				if($no==1)
-					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='7'>Perpipaan</td>";
-				echo "<td>Tebal pelat</td>";
+					echo "<td style='border-bottom: 1px solid #E6E6E6;' class='center' rowspan='7'>Pompa</td>";
 				echo "<td>".$row->Nama_Permesinan."</td>";
 				echo "<td>".$row->Kondisi_Permesinan."</td>";
 				echo "<td>".$row->Depresiasi_Permesinan."</td></tr>";
 				}
 	          ?>
+	          </tbody>
+	        </table>
+	        <br><br><br><br>
 </body>
 
 

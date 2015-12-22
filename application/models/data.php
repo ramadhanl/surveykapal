@@ -21,7 +21,7 @@ class data extends CI_Model{
 		         'loa' => $row->loa,
 		         'lpp' => $row->lpp,
 		         'd_design' => $row->d_design,
-		         'h_mld' => $row->loa,
+		         'h_mld' => $row->h_mld,
 		         'b_mld' => $row->b_mld,
 		         'vs' => $row->vs,
 		         'complement' => $row->complement,
